@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+/*HEADER*/
+
+header {
+    display: flex;
+}
+.nav {
+    margin: auto;
+    margin-top: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+.nav-link-container {
+    height: 8em;
+    width: 8em;
+    align-items: center;
+    display: flex;
+}
+.top-logo {
+    height: 8em;
+}
+.nav-link {
+    text-decoration: none;
+    color: #CCCDC7;
+    margin: auto;
+}

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/*BODY*/
+
+body {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    background-color: #050206;
+    margin: 0;
+    padding: 0;
+}
+
+.article {
+    width: 40%;
+    padding-top: 1%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.article-title-container {
+    text-align: center;
+}
+.article-title {
+    color: #CCCDC7;
+    font-size: 50px;
+}
+
+hr {
+    height: 1px;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
+}
+.article-data-container {
+    text-align: center;
+    display: flex;
+}
+.article-data {
+    color: gray;
+    width: 40%;
+    flex-grow: 1;
+}
+.article-data-divider {
+    color: gray;
+}
+.article-cover-container {
+    padding-top: 6%;
+}
+.article-cover {
+    width: 100%;
+    border-radius: 2em;
+}
+.article-text {
+    color: #CCCDC7;
+    padding-top: 6%;
+    padding-bottom: 20%;
+    font-size: 18px;
+    text-align: left;
+    text-align: justify;
+    line-height: 1.75em;
+}
+.title {
+    padding-bottom: 0.5em;
+    padding-top: 1em;
+}
+blockquote {
+    padding-top: 1em;
+}
+
+
+
+/*QUERIES*/
+
+@media screen and (max-width: 1440px) {
+    .article {
+        width: 60%;
+        padding-top: 1%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+  }
+@media screen and (max-width: 992px) {
+    .article {
+        width: 90%;
+        padding-top: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .article-text {
+        line-height: 3em;
+    }
+}

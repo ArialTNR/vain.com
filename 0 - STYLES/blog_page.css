@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/*BODY*/
+
+body {
+    background-color: #050206;
+    color: #CCCDC7;
+    margin: 0;
+    padding: 0;
+}
+.last-article-container {
+    width: 60%;
+    height: 100%;
+    padding-left: 13%;
+    padding-top: 2%;
+}
+    .last-article-container:hover {
+        background-color: #3B3B3B;
+    }
+.last-article-ad {
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    color: #9A8174;
+}
+.last-article-title {
+    padding-bottom: 1em;
+}
+.last-article-cover {
+    height: 25em;
+    border-radius: 2em;
+}

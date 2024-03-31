@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+header {
+    height: 100%;
+    width: auto;
+    height: 100vh;
+    background-image: url("less\ than\ 3.JPG");
+    background-size: cover;
+    background-position: center;
+}
+.top-logo-container {
+    text-align: center;
+}
+.top-logo {
+    height: 8em;
+}
+.nav {
+    text-align: center;
+    justify-content: space-evenly;
+    padding-top: 1%;
+}
+.nav-link {
+    text-decoration: none;
+    color: #CCCDC7;
+    padding: 1%;
+}
+
+/*BODY*/
+
+body {
+    background-color: #050206;
+    margin: 0;
+    padding: 0;
+}
+
+.best-articles-title {
+    text-align: center;
+}
+.title {
+    font-size: 110px;
+    color: #CCCDC7;
+    padding-top: 3%;
+}
+.best-articles-container {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+    padding-top: 2%;
+    padding-bottom: 15%;
+    width: 100%;
+    max-width: 100%;
+}
+.link-to-article {
+    text-decoration: none;
+}
+.article-box {
+    border-radius: 1rem;
+    background-color: #050206;
+    color: #CCCDC7;
+    width: 20em;
+    height: 29em;
+    transition-duration: 0.35s;
+}
+    .article-box:hover {
+        background-color: #3B3B3B;
+        width: 21em;
+        height: 30em;
+    }
+.article-cover {
+    height: 40%;
+    padding: 1em;
+    border-radius: 25px;
+}
+.article-title {
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.article-duration {
+    color: #9A8174;
+    font-size: 13px;
+    font-weight: 300;
+}
+.article-description {
+    font-size: 15px;
+    padding: 1.5em;
+}
+.music-section-container {
+    justify-content: space-evenly;
+    gap: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10em;
+}
+.music-cover-container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.music-cover {
+    height: 30em;
+    border-radius: 2rem;
+    transition-duration: 0.5s;
+}
+    .music-cover:hover {
+        height: 33em;
+    }
+.music-call-to-action {
+    padding-top: 2em;
+}
+.streaming-logo {
+    padding-top: 10%;
+}
+.newsletter-subscribe-container {
+    width: 100%;
+    text-align: center;
+    background-color: #191919;
+    border-radius: 60%;
+}
+.newsletter-subscribe {
+    padding: 5%;
+    padding-top: 10%;
+    border-radius: 6rem;
+    border: none;
+    width: 40%;
+    height: 500px;
+}
