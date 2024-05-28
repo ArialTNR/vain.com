@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 
 header {
     height: 100%;
     width: auto;
     height: 100vh;
-    background-image: url("less\ than\ 3.JPG");
+    background-image: url("../0 - IMAGES/simone-studio.JPG");
     background-size: cover;
     background-position: center;
 }
@@ -25,6 +28,57 @@ header {
     color: #CCCDC7;
     padding: 1%;
 }
+.scroll-down-button {
+    opacity: 1;
+    -webkit-transition: all 1s ease-in 3s;
+    transition: all 1s ease-in 3s;
+}
+.scroll-down-button {
+    position: absolute;
+    height: 5em;
+    width: 3em;
+    border: 2px solid #ffffff;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 3%;
+    border-radius: 3em;
+}
+.scroll-down-button:before {
+    position: absolute;
+    content: "";
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 1.2em;
+    height: 1em;
+    width: 1em;
+    background-color: #ffffff;
+    border-radius: 50%;
+    animation: move-down 2s infinite;
+}
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 6px;
+    height: 6px;
+    content: "V";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+    @keyframes move-down {
+        80% {
+        opacity: 0.5;
+        }
+        100% {
+        transform: translateY(2em);
+        opacity: 0;
+        }
+    }
 
 /*BODY*/
 
@@ -71,7 +125,7 @@ body {
         height: 30em;
     }
 .article-cover {
-    height: 40%;
+    height: 41%;
     padding: 1em;
     border-radius: 25px;
 }

@@ -8,13 +8,112 @@ body {
     background-color: #050206;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-display {
+    width: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    height: auto;
+    border: 3px solid #3B3B3B;
+    border-radius: 3em;
+    position: fixed;
+}
+.personal-profile {
+    width: 80%;
+    height: 4em;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    display: flex;
+    color: white;
+    border-radius: 2em;
+    text-decoration: none;
+    transition-duration: .5s;
+}
+    .personal-profile:hover {
+        background-color: #3B3B3B;
+    }
+.profile-image-container {
+    width: 25%;
+    display: flex;
+}
+.personal-profile-image {
+    height: 2em;
+    width: 2em;
+    border-radius: 2em;
+    margin: auto;
+}
+.profile-name-container {
+    margin: auto;
+}
+.hr-container {
+    width: 70%;
+    margin: auto;
+}
+.buttons-container {
+    width: 70%;
+    margin: auto;
+    margin-top: 1.5em;
+}
+.buttons {
+    margin: auto;
+    display: flex;
+    border-radius: 1.5em;
+    height: 2em;
+    text-decoration: none;
+}
+.share-button {
+    width: 100%;
+    background-color: #CCCDC7;
+    border: 2x solid #CCCDC7;
+    color: #050206;
+    transition-duration: .25s;
+    cursor:grab;
+}
+    .share-button:hover {
+        background-color: #050206;
+        border: #3B3B3B 2px solid;
+        color: #CCCDC7;
+    }
+.button-text {
+    margin: auto;
+}
+.share-display {
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10%;
+    margin-top: 1em ;
+}
+.social-share-container {
+    margin: auto;
+}
+.social-share {
+    height: 2em;
+}
+.double-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+.single-button {
+    border: #3B3B3B 1px solid;
+    width: 46%;
+    color: #CCCDC7;
 }
 
 .article {
     width: 40%;
-    padding-top: 1%;
-    padding-left: 30%;
-    padding-right: 30%;
+    margin-top: 7%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 .article-title-container {
     text-align: center;
@@ -52,7 +151,7 @@ hr {
 .article-text {
     color: #CCCDC7;
     padding-top: 6%;
-    padding-bottom: 20%;
+    padding-bottom: 5%;
     font-size: 18px;
     text-align: left;
     text-align: justify;
@@ -63,7 +162,7 @@ hr {
     padding-top: 1em;
 }
 blockquote {
-    padding-top: 1em;
+    padding-top: 5%;
 }
 
 
@@ -73,7 +172,7 @@ blockquote {
 @media screen and (max-width: 1440px) {
     .article {
         width: 60%;
-        padding-top: 1%;
+        padding-top: 10%;
         padding-left: 20%;
         padding-right: 20%;
     }
@@ -81,7 +180,7 @@ blockquote {
 @media screen and (max-width: 992px) {
     .article {
         width: 90%;
-        padding-top: 1%;
+        padding-top: 20%;
         padding-left: 5%;
         padding-right: 5%;
     }

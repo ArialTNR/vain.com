@@ -6,22 +6,32 @@
 header {
     display: flex;
 }
+.top-logo-container {
+    text-align: center;
+}
+.top-logo {
+    height: 8em;
+}
 .nav {
-    margin: auto;
-    margin-top: 0;
+    text-align: center;
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 3%;
+    gap: 1%;
+    justify-content: space-around;
+    padding-top: 0;
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+    background-image: linear-gradient(#050206, rgba(255, 255, 255, 0));
+    z-index: 1;
 }
 .nav-link-container {
     height: 8em;
     width: 8em;
     align-items: center;
     display: flex;
-}
-.top-logo {
-    height: 8em;
 }
 .nav-link {
     text-decoration: none;

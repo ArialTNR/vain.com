@@ -11,10 +11,12 @@ header {
     display: flex;
     flex-direction: column;
 }
+
 .page-presentation {
     width: 99%;
     text-align: center;
     padding-bottom: 20%;
+    padding-top: 20%;
 }
 .page-title {
     font-size: 60px;
