@@ -127,3 +127,22 @@ footer {
     .social-logo:hover {
         color: #050206;
     }
+
+
+/*QUERIES*/
+
+@media screen and (max-width: 1440px) {
+    
+  }
+@media screen and (max-width: 992px) {
+    .nav-link {
+        font-size: 30px;
+    }
+    .top-logo {
+      height: 10em;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    
+}

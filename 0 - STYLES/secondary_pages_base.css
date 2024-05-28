@@ -7,17 +7,19 @@ header {
     display: flex;
 }
 .top-logo-container {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 .top-logo {
     height: 8em;
+    margin: auto;
+    margin-top: 0;
 }
 .nav {
     text-align: center;
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 1%;
     justify-content: space-around;
     padding-top: 0;
     position: fixed;
@@ -37,4 +39,18 @@ header {
     text-decoration: none;
     color: #CCCDC7;
     margin: auto;
+}
+
+
+/*QUERIES*/
+
+@media screen and (max-width: 1440px) {
+    
+}
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 600px) {
+  
 }

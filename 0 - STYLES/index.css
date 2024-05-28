@@ -88,6 +88,10 @@ body {
     padding: 0;
 }
 
+#section-01 {
+    display: flex;
+    flex-direction: column;
+}
 .best-articles-title {
     text-align: center;
 }
@@ -107,9 +111,12 @@ body {
     padding-bottom: 15%;
     width: 100%;
     max-width: 100%;
+    border: 1px red solid;
 }
 .link-to-article {
     text-decoration: none;
+    margin: 1em;
+    border: 1px red solid;
 }
 .article-box {
     border-radius: 1rem;
@@ -118,6 +125,7 @@ body {
     width: 20em;
     height: 29em;
     transition-duration: 0.35s;
+    border: 1px red solid;
 }
     .article-box:hover {
         background-color: #3B3B3B;
@@ -146,28 +154,37 @@ body {
 }
 .music-section-container {
     justify-content: space-evenly;
-    gap: 2em;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 10em;
+    border: 1px red solid;
 }
 .music-cover-container {
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 40%;
+    display: flex;
+    border: 1px red solid;
 }
 .music-cover {
     height: 30em;
+    margin: auto;
     border-radius: 2rem;
     transition-duration: 0.5s;
+    border: 1px red solid;
 }
     .music-cover:hover {
         height: 33em;
     }
+.music-description-container {
+    width: 40%;
+    border: 1px red solid;
+}
 .music-call-to-action {
     padding-top: 2em;
+    border: 1px red solid;
 }
 .streaming-logo {
     padding-top: 10%;
+    border: 1px red solid;
 }
 .newsletter-subscribe-container {
     width: 100%;
@@ -182,4 +199,10 @@ body {
     border: none;
     width: 40%;
     height: 500px;
+}
+
+/*QUERIES*/
+
+@media screen and (max-width: 600px) {
+    
 }
