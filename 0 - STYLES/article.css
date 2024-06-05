@@ -11,6 +11,15 @@ body {
     display: flex;
     flex-direction: row;
 }
+h1 {
+    margin-top: 10%;
+}
+h2 {
+    margin-top: 7%;
+}
+h3 {
+    margin-top: 5%;
+}
 
 .profile-display {
     width: 20%;
@@ -21,6 +30,8 @@ body {
     border: 3px solid #3B3B3B;
     border-radius: 3em;
     position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .personal-profile {
     width: 80%;
@@ -57,7 +68,7 @@ body {
 .buttons-container {
     width: 70%;
     margin: auto;
-    margin-top: 1.5em;
+    margin-top: 1em;
 }
 .buttons {
     margin: auto;
@@ -66,22 +77,30 @@ body {
     height: 2em;
     text-decoration: none;
 }
-.share-button {
+.newsletter-button {
     width: 100%;
     background-color: #CCCDC7;
     border: 2x solid #CCCDC7;
-    color: #050206;
     transition-duration: .25s;
     cursor:grab;
+    text-decoration: none;
 }
-    .share-button:hover {
+    .newsletter-button:hover {
         background-color: #050206;
         border: #3B3B3B 2px solid;
-        color: #CCCDC7;
     }
 .button-text {
     margin: auto;
+    text-decoration: none;
 }
+.newsletter-button-text {
+    margin: auto;
+    text-decoration: none;
+    color: #050206;
+}
+    .newsletter-button:hover .newsletter-button-text {
+        color: #CCCDC7;
+    }
 .share-display {
     height: 4em;
     display: flex;
@@ -180,6 +199,13 @@ blockquote {
         margin: auto;
     }
   }
+@media screen and (max-width: 1400px) {
+.article {
+    width: 40%;
+    padding-top: 10%;
+    margin: auto;
+}
+}
 @media screen and (max-width: 992px) {
     body {
         flex-direction: column;
@@ -190,6 +216,9 @@ blockquote {
         padding-top: 15%;
         margin: auto;
     }
+    .external-link {
+        padding-top: 0;
+    }
     .profile-display {
         display: none;
     }
@@ -197,7 +226,18 @@ blockquote {
         font-size: 80px;
     }
     .article-data {
-        font-size: 30px;
+        font-size: 40px;
+    }
+    p {
+        font-size: 50px;
+        line-height: 1.5;
+    }
+    ul {
+        font-size: 50px;
+        line-height: 1.25;
+    }
+    h1 {
+        font-size: 60px;
     }
   }
 

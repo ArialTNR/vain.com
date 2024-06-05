@@ -21,12 +21,11 @@ header {
 .nav {
     text-align: center;
     justify-content: space-evenly;
-    padding-top: 1%;
+    display: flex;
+    flex-direction: row;
 }
 .nav-link {
-    text-decoration: none;
     color: #CCCDC7;
-    padding: 1%;
 }
 .scroll-down-button {
     opacity: 1;
@@ -91,6 +90,7 @@ body {
 #section-01 {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .best-articles-title {
     text-align: center;
@@ -111,12 +111,10 @@ body {
     padding-bottom: 15%;
     width: 100%;
     max-width: 100%;
-    border: 1px red solid;
 }
 .link-to-article {
     text-decoration: none;
     margin: 1em;
-    border: 1px red solid;
 }
 .article-box {
     border-radius: 1rem;
@@ -125,7 +123,6 @@ body {
     width: 20em;
     height: 29em;
     transition-duration: 0.35s;
-    border: 1px red solid;
 }
     .article-box:hover {
         background-color: #3B3B3B;
@@ -157,52 +154,177 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 10em;
-    border: 1px red solid;
 }
 .music-cover-container {
     width: 40%;
     display: flex;
-    border: 1px red solid;
 }
 .music-cover {
     height: 30em;
     margin: auto;
     border-radius: 2rem;
     transition-duration: 0.5s;
-    border: 1px red solid;
 }
     .music-cover:hover {
         height: 33em;
     }
 .music-description-container {
     width: 40%;
-    border: 1px red solid;
 }
 .music-call-to-action {
     padding-top: 2em;
-    border: 1px red solid;
+    width: auto;
 }
 .streaming-logo {
     padding-top: 10%;
-    border: 1px red solid;
 }
+
 .newsletter-subscribe-container {
-    width: 100%;
+    width: 80%;
+    margin: auto;
     text-align: center;
     background-color: #191919;
-    border-radius: 60%;
+    border-radius: 2em;
 }
-.newsletter-subscribe {
-    padding: 5%;
-    padding-top: 10%;
-    border-radius: 6rem;
-    border: none;
+.newsletter-box {
+    padding: 2em;
+}
+.newsletter-subscriber {
+    height: 10%;
     width: 40%;
-    height: 500px;
+    margin: 1em;
+}
+.newsletter-text {
+    color: #CCCDC7;
+    text-decoration: none;
 }
 
 /*QUERIES*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1440px) {
     
+}
+@media screen and (max-width: 1000px) {
+  .nav-link {
+    font-size: 40px;
+  }
+  .top-logo {
+    height: 12em;
+    margin-bottom: 5%;
+  }
+
+  .article-box {
+    border-radius: 5em;
+    border: 3px solid #3B3B3B;
+    margin: auto;
+    margin-bottom: 2em;
+    padding-top: 1em;
+    width: 70%;
+    height: auto;
+    }
+
+        .article-box:hover {
+            background-color: none;
+            width: 70%;
+            height: auto;
+        }
+
+    .article-cover {
+        width: 90%;
+        border-radius: 4em;
+    }
+    .article-title {
+        font-weight: 700;
+        font-size: 50px;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .article-duration {
+        font-size: 25px;
+    }
+    .article-description {
+        font-size: 30px;
+    }
+
+    .music-section-container {
+        padding-top: 10em;
+    }
+    .music-cover-container {
+        width: 80%;
+        height: auto;
+        display: flex;
+    }
+    .music-cover {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        border-radius: 3rem;
+        transition-duration: 0.5s;
+    }
+        .music-cover:hover {
+            height: auto;
+        }
+    .music-description-container {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3em;
+    }
+    .last-music-drop {
+        margin: auto;
+        font-size: 20px;
+    }
+    .music-title {
+        margin: auto;
+        margin-top: .75em;
+        margin-bottom: .5em;
+        font-size: 80px;
+    }
+    .music-description {
+        text-align: center;
+        font-size: 22px;
+    }
+    .music-call-to-action {
+        padding-top: 2em;
+        margin: auto;
+        width: auto;
+    }
+    .streaming-links {
+        padding-top: 1em;
+        margin: auto;
+    }
+    .streaming-logo {
+        height: 5em;
+        margin: .5em;
+    }
+        .streaming-logo:hover {
+            height: 5em;
+            width: auto;
+        }
+    
+    .music-title {
+        padding-top: 1em;
+    }
+    .newsletter-subscribe-container {
+        border-radius: 3em;
+        width: 90%;
+    }
+
+    .music-title {
+        margin: auto;
+        width: auto;
+    }
+    .music-description-container {
+        text-align: center;
+    }
+    .link-design {
+        text-decoration: underline;
+    }
+    .music-text {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  
 }

@@ -15,11 +15,13 @@ header {
 .page-presentation {
     width: 99%;
     text-align: center;
+    display: flex;
     padding-bottom: 20%;
     padding-top: 20%;
 }
 .page-title {
     font-size: 60px;
+    margin: auto;
 }
 
 /*BODY*/
@@ -41,8 +43,14 @@ body {
     justify-content: space-evenly;
     align-items: center;
 }
+.section-description-container {
+
+}
 .section-title {
     font-size: 50px;
+}
+.cit {
+    font-size: 20px;
 }
 .section-description {
     font-weight: 300;
@@ -82,4 +90,121 @@ a {
     }
 .section-discovery-container {
     max-width: 15em;
+}
+
+
+
+
+/*QUERIES*/
+
+@media screen and (max-width: 1440px) {
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .page-presentation {
+        width: 99%;
+        text-align: center;
+        display: flex;
+        padding-top: 80%;
+    }
+    .page-title {
+        font-size: 100px;
+        margin: auto;
+    }
+
+    .section {
+        min-height: 100vh;
+        height: auto;
+        width: auto;
+    }
+    .section-container {
+        padding-top: 5%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border: #3B3B3B solid 4px;
+        border-radius: 5rem;
+    }
+    .section-title {
+        font-size: 80px;
+        margin: auto;
+        margin-bottom: .5em;
+    }
+    .section-description {
+        font-weight: 300;
+        font-size: 40px;
+        margin-bottom: 1em;
+        text-align: center;
+        margin: auto;
+    }
+    .section-description-container {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+    .discover-more-button {
+        background-color: #9a817446;
+        height: 5em;
+        width: 25em;
+        text-align: center;
+        margin: auto;
+        display: flex;
+        margin-bottom: 2em;
+        line-height: 2.5em;
+        border-radius: 2em;
+    }
+    a {
+        text-decoration: none;
+        color: #CCCDC7;
+    }
+    .discover-more {
+        margin: auto;
+        font-size: 35px;
+    }
+    .cit {
+        font-size: 60px;
+        text-align: center;
+    }
+    .cit-name {
+        font-size: 50px;
+        text-align: center;
+    }
+    .streaming-links {
+        padding-top: 1em;
+        margin: auto;
+    }
+    .streaming-logo {
+        margin: .5em;
+        height: 10em;
+    }
+    .section-image {
+        height: 30em;
+        margin-top: 2em;
+    }
+    .product-cover {
+        margin: auto;
+        width: 25em;
+        height: auto;
+        border-radius: 1em;
+        padding: 0.5em;
+        transition-duration: 0.35s;
+    }
+        .product-cover:hover {
+            height: auto;
+        }
+    .section-discovery-container {
+        width: auto;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 3em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  
 }

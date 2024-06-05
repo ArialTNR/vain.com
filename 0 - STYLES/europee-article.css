@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+b {
+    font-weight: 600;
+    text-decoration: underline;
+}
+.external-link {
+    color: #9b8e8e;
+}
+
+.profile-display-phone {
+    visibility: hidden;
+    display: none;
+}
+.pro {
+    background-color: rgb(19, 71, 19);
+    border-radius: 5px;
+    text-decoration: none;
+    color: #CCCDC7;
+}
+.contro {
+    background-color: rgb(66, 13, 13);
+    border-radius: 5px;
+    text-decoration: none;
+    color: #CCCDC7;
+}
+.neutro {
+    background-color: #3B3B3B;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #CCCDC7;
+}
+.cand {
+    background-color: rgb(21, 21, 70);
+    border-radius: 5px;
+}
+.non-cand {
+    background-color: rgb(54, 54, 15);
+    border-radius: 5px;
+}
+.party-logo-container {
+    width: 100%;
+    display: flex;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.party-logo {
+    height: 15em;
+    margin: auto;
+}
+.external-link {
+    text-decoration: underline;
+}
+.external-link-index {
+    text-decoration: none;
+    color: #CCCDC7;
+    padding-top: 2%;
+}
+    .external-link-index:hover {
+        text-decoration: underline;
+    }
+
+
+
+@media screen and (max-width: 1000px) {
+    .profile-display-phone {
+        visibility: visible;
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: auto;
+        border: 3px solid #3B3B3B;
+        border-radius: 3em;
+        margin-top: 5%;
+    }
+    .buttons-container {
+        width: 70%;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .index-phone {
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: column;
+    }
+    .hr-container {
+        margin-left: auto;
+        margin-top: 5%;
+    }
+    .external-link-phone {
+        font-size: 50px;
+        text-decoration: none;
+        color: #CCCDC7;
+    }
+    .share-display-phone {
+        height: 15%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .social-share-container {
+        margin: 5%;
+        width: 20%;
+        height: 30%;
+        display: flex;
+    }
+    .social-share {
+        height: 80%;
+        margin: auto;
+    }
+    .pro {
+        border-radius: 10px;
+    }
+    .contro {
+        border-radius: 10px;
+    }.cand {
+        border-radius: 10px;
+    }
+    .non-cand {
+        border-radius: 10px;
+    }   
+  }

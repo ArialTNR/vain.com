@@ -97,3 +97,32 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+
+
+
+
+@media screen and (max-width: 1440px) {
+    
+}
+@media screen and (max-width: 1000px) {
+    .instagram {
+        margin-top: 50%;
+        margin-left: 20%;
+    }
+    .spotify {
+        margin-top:100%;
+        margin-left: 65%;
+    }
+    .tiktok {
+        margin-top: 34%;
+        margin-left: 70%;
+    }
+    .youtube {
+        margin-top: 120%;
+        margin-left: 25%;
+    }
+}
+@media screen and (max-width: 600px) {
+  
+}
