@@ -8,6 +8,9 @@ b {
 .external-link {
     color: #9b8e8e;
 }
+h1 {
+    line-height: 1.5em;
+}
 
 .profile-display-phone {
     visibility: hidden;
