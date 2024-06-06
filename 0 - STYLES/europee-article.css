@@ -12,6 +12,22 @@ h1 {
     line-height: 1.5em;
 }
 
+table {
+    border-radius: 2rem;
+}
+.top-tr {
+    background-color: #4a413c;
+}
+th {
+    width: 5%;
+}
+
+.motto {
+    text-decoration: italic;
+    text-align: center;
+    color: #9A8174;
+}
+
 .profile-display-phone {
     visibility: hidden;
     display: none;
