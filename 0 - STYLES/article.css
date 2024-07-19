@@ -33,15 +33,20 @@ h3 {
     overflow-y: scroll;
     overflow-x: hidden;
 }
-.personal-profile {
+.personal-profile-desktop {
     width: 80%;
     height: 4em;
+    margin-top: 5%;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 5%;
+    border-radius: 2em;
+}
+.profile-display-phone {
+    display: none;
+}
+.personal-profile {
     display: flex;
     color: white;
-    border-radius: 2em;
     text-decoration: none;
     transition-duration: .5s;
 }
@@ -200,11 +205,11 @@ blockquote {
     }
   }
 @media screen and (max-width: 1400px) {
-.article {
-    width: 40%;
-    padding-top: 10%;
-    margin: auto;
-}
+    .article {
+        width: 40%;
+        padding-top: 10%;
+        margin: auto;
+    }
 }
 @media screen and (max-width: 992px) {
     body {
@@ -219,9 +224,76 @@ blockquote {
     .external-link {
         padding-top: 0;
     }
-    .profile-display {
+
+    .profile-display-desktop {
         display: none;
     }
+    .profile-display-phone {
+        display: contents;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+        height: auto;
+        border: 3px solid #3B3B3B;
+        border-radius: 6em;
+    }
+    .personal-profile-phone {
+        width: 90%;
+        height: 10em;
+        margin: auto;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        border-radius: 9em;
+    }
+    .profile-image-container {
+        width: 6em;
+        display: flex;
+        margin: 2em;
+    }
+    .personal-profile-image-phone {
+        height: 6em;
+        width: 6em;
+        border-radius: 4em;
+    }
+    .profile-name {
+        font-size: 50px;
+        margin: auto;
+    }
+    .hr-container {
+        width: 80%;
+        margin-top: 3em;
+    }
+    .buttons-container {
+        width: 80%;
+        margin-top: 2em;
+    }
+    .buttons {
+        margin-top: 1.5em;
+        text-align: center;
+        border-radius: 9em;
+        height: 10em;
+    }
+    .button-text {
+        font-size: 50px;
+    }
+    .share-title {
+        width: 100%;
+        text-align: center;
+    }
+    .share-display {
+        height: 10em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 10%;
+        margin-top: 2em ;
+    }
+    .social-share {
+        height: 8em;
+    }
+
     .article-title {
         font-size: 80px;
     }
